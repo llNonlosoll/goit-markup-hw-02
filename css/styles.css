@@ -1,0 +1,131 @@
+:root {
+  --primary-text-color: #434455;
+  --title-text-color: #2e2f42;
+  --accent-color: ;
+  --primary-white-color: #ffffff;
+  --primary-button-bg-color: #4d5ae5;
+  --secondary-button-bg-color: #f4f4fd;
+}
+/* Styles for index.html */
+
+body {
+  background-color: var(--primary-white-color);
+  color: var(--primary-text-color);
+}
+
+.hero,
+.footer {
+  background-color: #2e2f42;
+}
+
+.hero-button {
+  background-color: var(--primary-button-bg-color);
+  color: #ffffff;
+}
+
+.hero > .title {
+  color: #ffffff;
+}
+
+.title {
+  color: var(--title-text-color);
+}
+
+.list {
+  list-style: none;
+}
+
+.site-nav .link {
+  color: #2e2f42;
+}
+
+.contacts a {
+  color: var(--primary-text-color);
+}
+
+.link.current {
+  color: #4d5ae5;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: #434455;
+}
+.team {
+  background-color: #f4f4fd;
+}
+
+.footer p {
+  color: #e7e9fc;
+}
+/*Styles for portfolio.html*/
+.selector button {
+  background-color: var(--secondary-button-bg-color);
+  color: var(--primary-button-bg-color);
+}
+
+.selector button:hover,
+.hero-button:hover,
+.selector button:focus,
+.hero-button:focus {
+  background-color: var(--primary-button-bg-color);
+  color: #ffffff;
+}
+/*logo:hover
+#4D5AE5 web
+#2E2F42 studio
+logo:focus{}*/
+
+/*class = button section section-title h=title .logo site-nav contacts link link-nav;*/
+
+/*body color #E5E5E5*/
+
+/*header color FFFFFF*/
+
+/* 434455 mail-phone
+nav color 2E2F42
+
+:hover
+:focus
+
+
+color body - 434455
+body - roboto
+ Сімейство шрифтів Roboto явно задане тільки для елемента <body>, інші елементи наслідують його.
+
+
+Кнопкам задана властивість cursor зі значенням pointer.
+*/
+
+/* Hero */
+
+/* Section */
+
+/* Зверніть увагу, що колір другої частини логотипу в хедері та футері відрізняється.
+:two: Курсива у футері бути не повинно (по дефолту для тега address браузер задає 
+font-style: italic, вам цю властивість потрібно перебити).
+:three: Не забуваймо про ховер/фокус для інтерактивних елементів. У футері його явно
+ не видно, але на контактах можемо зробити також акцентний синій, щоб зберегти 
+ цілісний вигляд нашої сторінки.
+:four: Шрифти підключаємо одним посиланням (а не двома окремими), не забуваємо 
+вибирати необхідну жирність (для raleway - 700, для roboto - 400, 500, 700, 900). 
+На макеті є ще Oleo Script, але фактично його не використовуємо.
+:five: Перехід повинен працювати не лише зі сторінки «Студія» на сторінку «Портфоліо»,
+ а й навпаки.
+:six: На сторінці з портфоліо кнопки-фільтри (використовуйте для них тег button) 
+та картки портфоліо - це 2 списки, загорнуті в загальну секцію 
+(2 окремі секції виділяти не потрібно).
+:seven: Всі кольори тексту та кольори фону виносимо у змінні. Навіть якщо колір 
+поки що використовується один раз, не хвилюйтеся наш проект буде розростатися і їх 
+будемо перевикористовувати, так що виносимо всі кольори в змінні.
+:eight: Коли прописуєте css правила для елементів, не пишіть зайвого. Наприклад, 
+сімейство шрифтів roboto досить раз задати для body, а далі тільки перезаписувати 
+цю властивість за потребою (зокрема, для логотипу). При цьому зверніть увагу, що 
+елементи форми (вас цікавлять на даному етапі кнопки) властивість font-family не 
+успадковують за замовчуванням, тобто для них потрібно задати 
+явно -- font-family: inherit. Також ви часто для всіх елементів прописуєте 
+font-style:normal, але це дефолтне значення. Задавайте цю властивість 
+лише тоді, коли її потрібно перевизначити.
+:nine: Перед здачею роботи не забувайте пробігтися всіма пунктами і переконайтеся, 
+що нічого не пропустили. Це не тільки полегшить роботу ментору, що забезпечить 
+більш оперативну перевірку робіт, а й позбавить вас зайвих ресабмітів.*/
