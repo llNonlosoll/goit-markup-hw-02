@@ -5,12 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header>
       <nav>
-        <a href="/" class="logo">WEBSTUDIO</a>
+        <a href="/" class="logo link">
+          <span class="logo-web">WEB</span><span class="logo-studio">STUDIO</span>
+        </a>
         <ul class="site-nav list">
           <li><a href="./index.html" class="link">Studio</a></li>
           <li><a href="./portfolio.html" class="link current">Portfolio</a></li>
@@ -18,19 +26,19 @@
         </ul>
       </nav>
       <ul class="contacts list">
-        <li><a href="tel:+110001111111">+11 (000) 111-11-11</a></li>
-        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+        <li><a href="tel:+110001111111" class="link">+11 (000) 111-11-11</a></li>
+        <li><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
       </ul>
     </header>
     <main>
       <section class="section">
-        <!--<h1>Portfolio</h1>-->
-        <ul class="list selector">
-          <li><button type="button">All</button></li>
-          <li><button type="button">Web Site</button></li>
-          <li><button type="button">App</button></li>
-          <li><button type="button">Design</button></li>
-          <li><button type="button">Marketing</button></li>
+        <h1 hidden>Portfolio</h1>
+        <ul class="list">
+          <li><button type="button" class="selector-button">All</button></li>
+          <li><button type="button" class="selector-button">Web Site</button></li>
+          <li><button type="button" class="selector-button">App</button></li>
+          <li><button type="button" class="selector-button">Design</button></li>
+          <li><button type="button" class="selector-button">Marketing</button></li>
         </ul>
         <ul class="list">
           <li>
@@ -86,8 +94,10 @@
       </section>
     </main>
     <footer class="footer">
-      <a href="/">WEBSTUDIO</a>
-      <p>
+      <a href="/" class="logo link">
+        <span class="logo-web">WEB</span><span class="logo-studio">STUDIO</span>
+      </a>
+      <p class="footer-text">
         Increase the flow of customers and sales for your business with digital marketing & growth
         solutions.
       </p>

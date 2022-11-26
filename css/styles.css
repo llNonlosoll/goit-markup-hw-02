@@ -1,131 +1,142 @@
 :root {
-  --primary-text-color: #434455;
-  --title-text-color: #2e2f42;
-  --accent-color: ;
-  --primary-white-color: #ffffff;
-  --primary-button-bg-color: #4d5ae5;
-  --secondary-button-bg-color: #f4f4fd;
+  --main-color: #ffffff; /*white*/
+  --secondary-color: #2e2f42; /*navy-blue*/
+  --third-color: #f4f4fd; /*cloud*/
+  --main-text-color: #434455; /*slate*/
+  --secondary-text-color: #e7e9fc; /*Cornflower*/
+  --accent: #4d5ae5; /*iris*/
+  --accent-secondary: #404bbf;
 }
-/* Styles for index.html */
-
+/* General */
 body {
-  background-color: var(--primary-white-color);
-  color: var(--primary-text-color);
+  background-color: var(--main-color);
+  color: var(--main-text-color);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.logo {
+  font-family: 'Raleway';
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 0.03em;
 }
 
 .hero,
 .footer {
-  background-color: #2e2f42;
+  background-color: var(--secondary-color);
 }
 
-.hero-button {
-  background-color: var(--primary-button-bg-color);
-  color: #ffffff;
-}
-
-.hero > .title {
-  color: #ffffff;
-}
-
-.title {
-  color: var(--title-text-color);
+.link {
+  text-decoration: none;
 }
 
 .list {
   list-style: none;
 }
 
-.site-nav .link {
-  color: #2e2f42;
+.logo-web {
+  color: var(--accent);
 }
 
-.contacts a {
-  color: var(--primary-text-color);
+/* Header */
+.logo-studio {
+  color: var(--secondary-color);
 }
 
-.link.current {
-  color: #4d5ae5;
+.site-nav a {
+  color: var(--secondary-color);
+  font-weight: 600;
 }
 
+.contacts .link,
 .site-nav .link:hover,
 .site-nav .link:focus {
-  color: #434455;
-}
-.team {
-  background-color: #f4f4fd;
+  color: var(--main-text-color);
 }
 
-.footer p {
-  color: #e7e9fc;
-}
-/*Styles for portfolio.html*/
-.selector button {
-  background-color: var(--secondary-button-bg-color);
-  color: var(--primary-button-bg-color);
+.link.current,
+.site-nav .link:active,
+.contacts .link:hover,
+.contacts .link:focus {
+  color: var(--accent);
 }
 
-.selector button:hover,
+/* Footer */
+.footer .logo-studio {
+  color: var(--third-color);
+}
+
+.footer-text {
+  color: var(--secondary-text-color);
+}
+
+/*Index.html*/
+.hero > .title {
+  color: var(--main-color);
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+}
+
+.hero-button {
+  cursor: pointer;
+  background-color: var(--accent);
+  color: var(--main-color);
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.04em;
+}
+
 .hero-button:hover,
-.selector button:focus,
 .hero-button:focus {
-  background-color: var(--primary-button-bg-color);
-  color: #ffffff;
+  background-color: var(--accent);
+  color: var(--main-color);
 }
-/*logo:hover
-#4D5AE5 web
-#2E2F42 studio
-logo:focus{}*/
 
-/*class = button section section-title h=title .logo site-nav contacts link link-nav;*/
+.hero-button:active {
+  background-color: var(--accent-secondary);
+}
 
-/*body color #E5E5E5*/
+.title {
+  color: var(--secondary-color);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+}
 
-/*header color FFFFFF*/
+.work > .title,
+.team > .title {
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+}
 
-/* 434455 mail-phone
-nav color 2E2F42
+.section.team {
+  background-color: var(--third-color);
+}
 
-:hover
-:focus
+/*Portfolio*/
+.selector-button {
+  cursor: pointer;
+  background-color: var(--third-color);
+  color: var(--accent);
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
 
-
-color body - 434455
-body - roboto
- Сімейство шрифтів Roboto явно задане тільки для елемента <body>, інші елементи наслідують його.
-
-
-Кнопкам задана властивість cursor зі значенням pointer.
-*/
-
-/* Hero */
-
-/* Section */
-
-/* Зверніть увагу, що колір другої частини логотипу в хедері та футері відрізняється.
-:two: Курсива у футері бути не повинно (по дефолту для тега address браузер задає 
-font-style: italic, вам цю властивість потрібно перебити).
-:three: Не забуваймо про ховер/фокус для інтерактивних елементів. У футері його явно
- не видно, але на контактах можемо зробити також акцентний синій, щоб зберегти 
- цілісний вигляд нашої сторінки.
-:four: Шрифти підключаємо одним посиланням (а не двома окремими), не забуваємо 
-вибирати необхідну жирність (для raleway - 700, для roboto - 400, 500, 700, 900). 
-На макеті є ще Oleo Script, але фактично його не використовуємо.
-:five: Перехід повинен працювати не лише зі сторінки «Студія» на сторінку «Портфоліо»,
- а й навпаки.
-:six: На сторінці з портфоліо кнопки-фільтри (використовуйте для них тег button) 
-та картки портфоліо - це 2 списки, загорнуті в загальну секцію 
-(2 окремі секції виділяти не потрібно).
-:seven: Всі кольори тексту та кольори фону виносимо у змінні. Навіть якщо колір 
-поки що використовується один раз, не хвилюйтеся наш проект буде розростатися і їх 
-будемо перевикористовувати, так що виносимо всі кольори в змінні.
-:eight: Коли прописуєте css правила для елементів, не пишіть зайвого. Наприклад, 
-сімейство шрифтів roboto досить раз задати для body, а далі тільки перезаписувати 
-цю властивість за потребою (зокрема, для логотипу). При цьому зверніть увагу, що 
-елементи форми (вас цікавлять на даному етапі кнопки) властивість font-family не 
-успадковують за замовчуванням, тобто для них потрібно задати 
-явно -- font-family: inherit. Також ви часто для всіх елементів прописуєте 
-font-style:normal, але це дефолтне значення. Задавайте цю властивість 
-лише тоді, коли її потрібно перевизначити.
-:nine: Перед здачею роботи не забувайте пробігтися всіма пунктами і переконайтеся, 
-що нічого не пропустили. Це не тільки полегшить роботу ментору, що забезпечить 
-більш оперативну перевірку робіт, а й позбавить вас зайвих ресабмітів.*/
+.selector-button:hover,
+.selector-button:focus {
+  background-color: var(--accent);
+  color: var(--main-color);
+}
