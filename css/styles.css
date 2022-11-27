@@ -20,7 +20,7 @@ body {
 
 .logo {
   font-family: 'Raleway';
-  font-weight: 800;
+  font-weight: 700;
   font-size: 18px;
   line-height: 1.33;
   letter-spacing: 0.03em;
@@ -50,7 +50,7 @@ body {
 
 .site-nav a {
   color: var(--secondary-color);
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .contacts .link,
@@ -78,7 +78,6 @@ body {
 /*Index.html*/
 .hero > .title {
   color: var(--main-color);
-  font-weight: 600;
   font-size: 56px;
   line-height: 1.07;
   text-align: center;
@@ -89,7 +88,7 @@ body {
   background-color: var(--accent);
   color: var(--main-color);
   font-family: inherit;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.04em;
@@ -107,7 +106,6 @@ body {
 
 .title {
   color: var(--secondary-color);
-  font-weight: 600;
   font-size: 20px;
   line-height: 1.2;
 }
@@ -129,7 +127,7 @@ body {
   background-color: var(--third-color);
   color: var(--accent);
   font-family: inherit;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
@@ -139,4 +137,8 @@ body {
 .selector-button:focus {
   background-color: var(--accent);
   color: var(--main-color);
+}
+
+.link p {
+  color: var(--main-text-color);
 }
